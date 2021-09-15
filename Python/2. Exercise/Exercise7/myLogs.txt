@@ -1,0 +1,12 @@
+Eyes relaxed at: 2021-07-23 13:39:49.483640
+Drank water at: 2021-07-23 13:39:58.984662
+Physical activity done at: 2021-07-23 13:40:07.604184
+Eyes relaxed at: 2021-07-23 13:40:26.637677
+Drank water at: 2021-07-23 13:40:45.161383
+Physical activity done at: 2021-07-23 13:41:01.431320
+Eyes relaxed at: 2021-07-23 14:02:09.720109
+Physical activity done at: 2021-07-23 14:02:20.954142
+Drank water at: 2021-07-23 14:02:38.398916
+Eyes relaxed at: 2021-07-23 15:10:04.599645
+Drank water at: 2021-07-23 15:10:20.920864
+Physical activity done at: 2021-07-23 15:10:36.442795

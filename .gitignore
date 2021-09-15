@@ -1,0 +1,12 @@
+.vscode
+.idea
+.ipynb_checkpoints
+__pycache__
+build
+dist
+*.exe
+*.o
+rough.c
+Rough.cpp
+Rough.py
+Rough.ipynb

@@ -1,0 +1,43 @@
+# -----Regular Expressions-----
+Metacharacters:
+\   Used to drop the special meaning of character following it (can also be used to escape special characters)
+[]  Represent a character class (a set of characters)
+^   Matches the beginning (Starts with)
+$   Matches the end (Ends with)
+.   Matches any character except newline
+?   Matches zero or one occurrence
+|   Means OR (Matches with any of the characters separated by it)
+*   Any number of occurrences (including 0 occurrences)
++   One or more occurrences
+{}  Indicate number of occurrences of a preceding RE to match (Exactly the specified number of occurrences)
+()  Enclose a group of REs (Capture and group)
+
+Special Sequences:
+\A	Returns a match if the specified characters are at the beginning of the string
+\b	Returns a match where the specified characters are at the beginning or at the end of a word
+\B	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+\d  Matches any decimal digit, this is equivalent to the set class [0-9]
+\D  Matches any non-digit character
+\s  Matches any whitespace character
+\S  Matches any non-whitespace character
+\w  Matches any alphanumeric character, this is equivalent to the class [a-zA-Z0-9_]
+\W  Matches any non-alphanumeric character
+\Z	Returns a match if the specified characters are at the end of the string
+
+RegEx Functions:-
+search()   : Returns a Match object if there is a match anywhere in the string
+match()    : This function attempts to match pattern to whole string. It returns a match object on success, None on failure
+split()    : Returns a list where the string has been split at each match
+sub()      : Replaces one or many matches with a string
+subn()     : It is similar to sub() in all ways, except in its way to providing output
+             It returns a tuple with count of total of replacement and the new string rather than just the string
+findall()  : Returns a list containing all matches
+compile()  : Regular expressions are compiled into pattern objects, which have methods for various operations such as
+             searching for pattern matches or performing string substitutions
+finditer() : Yields an iterator as a resultant with all the objects that match the one we sent it
+             It also provides more details related to the matched object
+
+The Match object has properties and methods used to retrieve information about the search, and the result:
+.span()  : returns a tuple containing the start-, and end positions of the match
+.string  : returns the string passed into the function
+.group() : returns the part of the string where there was a match
