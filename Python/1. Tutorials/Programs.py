@@ -40,6 +40,13 @@
 #     i += 1
 # print(s1)
 
+"""Checking if two words are anagrams"""
+# def is_anagram(str1, str2):
+#     return sorted(str1) == sorted(str2)
+
+# print(is_anagram('geek', 'eegk'))
+# print(is_anagram('geek', 'peek'))
+
 """Sort a list of numbers"""
 # l = [int(x) for x in input("Enter numbers separated by comma:\n").split(',')]
 # print(sorted(l))    # it doesn't sort 'l' but returns sorted of 'l'
@@ -54,6 +61,10 @@
 #     if item == element:
 #         print(index, end=" ")
 #     index += 1
+
+"""Find The Most Frequent Value In A List"""
+# test = [1, 2, 3, 4, 2, 2, 3, 1, 4, 4, 4]
+# print(max(set(test), key = test.count))
 
 """Remove duplicate from a list of strings"""
 # lst = [item.strip() for item in input("Enter some items separated by comma:\n").split(',')]
