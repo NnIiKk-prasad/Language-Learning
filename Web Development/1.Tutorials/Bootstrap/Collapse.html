@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Collapse</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1/bootstrap.min.css" />
+    <script src="bootstrap-3.4.1/jquery.min.js"></script>
+    <script src="bootstrap-3.4.1/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header well">
+            <h1>Bootstrap Collapse</h1>
+        </div>
+        <div class="row">
+            <h2>Basic Collapsible:</h2>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#p01">Simple
+                Collapsible</button>
+            <div id="p01" class="collapse">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <hr />
+            <a href="#p02" data-toggle="collapse">Simple Collapsible</a>
+            <div id="p02" class="collapse">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <hr />
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#p03">Simple
+                Collapsible</button>
+            <div id="p03" class="collapse in">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Collapsible Panel:</h2>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#p04" data-toggle="collapse">Collapsible Panel</a>
+                        </h4>
+                    </div>
+                    <div id="p04" class="panel-collapse collapse">
+                        <div class="panel-body">Panel Body</div>
+                        <div class="panel-footer">Panel Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Collapsible List Group:</h2>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#p05" data-toggle="collapse">Collapsible List Group</a>
+                        </h4>
+                    </div>
+                    <div id="p05" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">One</li>
+                            <li class="list-group-item">Two</li>
+                            <li class="list-group-item">Three</li>
+                        </ul>
+                        <div class="panel-footer">Panel Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Accordion:</h2>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapsibe1" data-parent="#accordion" data-toggle="collapse">Collapsible Group
+                                1</a>
+                        </h4>
+                    </div>
+                    <div id="collapsibe1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapsibe2" data-parent="#accordion" data-toggle="collapse">Collapsible Group
+                                2</a>
+                        </h4>
+                    </div>
+                    <div id="collapsibe2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapsibe3" data-parent="#accordion" data-toggle="collapse">Collapsible Group
+                                3</a>
+                        </h4>
+                    </div>
+                    <div id="collapsibe3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

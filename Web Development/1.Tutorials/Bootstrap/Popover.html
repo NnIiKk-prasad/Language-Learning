@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Popover</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1/bootstrap.min.css" />
+    <script src="bootstrap-3.4.1/jquery.min.js"></script>
+    <script src="bootstrap-3.4.1/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header well">
+            <h1>Bootstrap Popover Plugin</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>The Popover Plugin:</h2>
+            </div>
+            <div class="col-sm-8" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" title="Popover Header" data-content="Some content">Toggle
+                        popover</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Positioning Popover:</h2>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-placement="top" title="Popover Header"
+                        data-content="Some content">Click</a></p>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-placement="right" title="Popover Header"
+                        data-content="Some content">Click</a></p>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-placement="bottom" title="Popover Header"
+                        data-content="Some content">Click</a></p>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-placement="left" title="Popover Header"
+                        data-content="Some content">Click</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Closing Popovers:</h2>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-trigger="focus" title="Dismissible popover"
+                        data-content="Click anywhere in the document to close this popover">Click me</a></p>
+            </div>
+            <div class="col-sm-2" style="padding-top:25px;">
+                <p><a href="#" data-toggle="popover" data-trigger="hover" title="Popover Header"
+                        data-content="some content">Hover over me</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
