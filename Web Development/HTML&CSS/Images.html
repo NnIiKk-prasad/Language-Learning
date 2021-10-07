@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        img {
+            height: 400px;
+            width: 400px;
+        }
+
+        body {
+            background-image: url('Images/Flower.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        div {
+            background-image: url('Images/smiley.gif');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+    <figure>
+        <img src="/Images/Img_BMW.jpg" alt="BMW car" width="100" height="100" />
+        <figcaption>Fig 1: A car</figcaption>
+        <br />
+        <!--Use style attribute to prevent styles sheets from changing the size of images:-->
+        <img src="/Images/Img_BMW.jpg" alt="BMW car" style="width:100px; height:100px" />
+        <br />
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        <br />
+    </figure>
+    <p>
+        <img src="Images/smiley.gif" alt="Smily face" style="float:left; height:45px; width:45px;" />
+        The image will float to the left of the text.
+    </p>
+    <br />
+    <div>
+        <img src="Images/workplace.jpg" alt="Workplace" usemap="#workmap" />
+        <map name="workmap">
+            <area shape="rect" coords="34, 44, 270, 365" alt="computer" href="Images.html" />
+            <area shape="rect" coords="290,180,333,260" alt="mobile" href="Images.html" />
+            <area shape="circle" coords="337,320,44" alt="tea" href="Images.html" />
+        </map>
+    </div>
+    <br />
+    <picture>
+        <source media="(min-width: 650px)" srcset="Images/img_food.jpg">
+        <source media="(min-width: 465px)" srcset="Images/img_car.jpg">
+        <img src="Images/img_girl.jpg">
+    </picture>
+</body>
+</html>

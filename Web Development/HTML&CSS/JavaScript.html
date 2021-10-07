@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <h1>My first JavaScript</h1>
+    <h2>JavaScript can change content of an HTML element</h2>
+    <p id="p01">Some Text</p>
+    <br />
+    <h2>JavaScript can change style of an HTML element</h2>
+    <p id="p02">Some Text</p>
+    <br />
+    <button type="button" onclick="myFunction()">Click Me</button>
+    <script>
+        function myFunction() {
+            document.getElementById("p01").innerHTML = "Some other text";
+            document.getElementById("p02").style.color = "red";
+            document.getElementById("p02").style.backgroundColor = "yellow";
+            document.getElementById("p02").style.fontSize = "25px";
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <br /><br />
+    <img id="myImage" src="Images/pic_bulboff.gif" height="180" width="100" />
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "Images/pic_bulboff.gif";
+            } else {
+                pic = "Images/pic_bulbon.gif";
+            }
+            document.getElementById("myImage").src = pic;
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>

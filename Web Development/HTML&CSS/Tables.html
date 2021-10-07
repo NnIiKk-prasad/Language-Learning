@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            border-spacing: 5px;
+        }
+
+        .tab {
+            border-collapse: collapse;
+        }
+
+        table#t04 th {
+            color: white;
+            background-color: black;
+        }
+
+        table#t04 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t04 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table 1</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Nikhil</td>
+            <td>Prasad</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>92</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table class="tab">
+        <caption>Table 2</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Nikhil</td>
+            <td>Prasad</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>92</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table class="tab">
+        <caption>Table 3</caption>
+        <tr>
+            <th>Name</th>
+            <td>Nikhil Prasad</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contacts</th>
+            <td>8234833281</td>
+        </tr>
+        <tr>
+            <td>7987873533</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table id="t04" class="tab">
+        <caption>Table 4</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Nikhil</td>
+            <td>Prasad</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>92</td>
+        </tr>
+    </table>
+</body>
+</html>
