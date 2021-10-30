@@ -1,0 +1,14 @@
+{
+  "name": "tut_2",
+  "version": "1.0.0",
+  "description": "MongoDB-NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.0.11"
+  }
+}

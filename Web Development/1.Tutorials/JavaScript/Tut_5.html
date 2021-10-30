@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Arrays & Objects</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Arrays & Objects in JavaScript</h1>
+        <p>Check browser console.</p>
+    </div>
+
+    <script>
+        // Premitive datatypes
+        let var1 = 34;
+        let var2 = "Nikhil";
+        let var3 = true;
+        let var4 = null;
+        let var5 = undefined;
+
+        // Objects
+        let employee = {
+            name: "Nikhil",
+            salary: 34000,
+            role: "Developer"
+        }
+        console.log(employee);
+
+        // Arrays
+        let names = [1, 3, "Nikhil", undefined];
+        console.log(names);
+        console.log(names[2]);
+
+        let names1 = new Array(1, 5, 3, "Prasad", "Nikhil", undefined);
+        console.log(names1);
+        console.log(names1.length);
+        
+        names1 = names1.sort();
+        console.log(names1);
+        
+        names1.push("786");
+        console.log(names1);
+
+        let numbers = new Array(23);
+        console.log(numbers);
+    </script>
+</body>
+</html>

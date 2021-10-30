@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings & String Methods</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Strings & String Methods in JavaScript</h1>
+        <p>Check browser console.</p>
+        <div id="content"></div>
+    </div>
+    
+    <script>
+        // Strings
+        var name = "Nikhil";
+        var message = " is a good boy.";
+        console.log(name + message);
+        
+        var temp = `${name} is a good boy.`;
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById("content").innerHTML = "<h3>This is an h3 heading.</h3>";
+
+        // String methods
+        var str = "This is a string";
+        
+        var position = str.indexOf("is"); // returns first occurance of a substrig
+        console.log(position);
+
+        
+        position = str.lastIndexOf("is"); // returns last occurance of a substrig
+        console.log(position);
+
+        var sub_str = str.slice(1, 6);
+        console.log(sub_str);
+        
+        sub_str = str.substring(1, 6);
+        console.log(sub_str);
+
+        sub_str = str.substr(1, 6);
+        console.log(sub_str);
+
+        var replaced = str.replace("a string", "me");
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newStr = str.concat("New String.");
+        console.log(newStr);
+
+        var strWithWhitespaces = "    this contains   white spaces   ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+
+        var char1 = str.charAt(3);
+        console.log(char1);
+
+        char1 = str.charCodeAt(3);
+        console.log(char1);
+
+        console.log(str[3]);
+    </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ class Complex
     int a, b;
 
 public:
-    setdata(int x, int y)
+    void setdata(int x, int y)
     {
         a = x;
         b = y;
