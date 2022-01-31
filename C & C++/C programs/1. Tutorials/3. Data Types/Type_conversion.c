@@ -5,7 +5,7 @@ int main()
 {
     // Implicit Type Conversion
     int x = 10;   // integer x
-    char y = 'a'; // character c
+    char y = 'a'; // character y
 
     x = x + y;         // y implicitly converted to int. ASCII value of 'a' is 97
     float z = x + 1.0; // x is implicitly converted to float
