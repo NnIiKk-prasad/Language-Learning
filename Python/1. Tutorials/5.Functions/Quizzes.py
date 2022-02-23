@@ -11,10 +11,6 @@
 """ord() function converts a character into its ASCII notation and chr() converts the ASCII to character"""
 # print(chr(ord('A')))
 
-"""The type() function returns the class of the argument the object belongs to
-Thus, type(int) returns which is of the type ‘type’ object"""
-# print(type(type(int)))
-
 """Python explicitly defines the None object that is returned if no value is specified"""
 # def add(a, b):
 #     print(a + b)
