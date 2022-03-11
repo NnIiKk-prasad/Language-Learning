@@ -33,3 +33,6 @@ id multiplied with a constant k>=0 then the same list is appended k times in the
 
 """\\x is an escape sequence that means the following 2 digits are a hexadecimal number encoding a character"""
 # print('\x25\x26')
+
+"""To sort a dictionary by value"""
+# {k: v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
