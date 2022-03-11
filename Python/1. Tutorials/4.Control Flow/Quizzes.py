@@ -21,3 +21,7 @@ output"""
 #         break
 # else:
 #     print(0)
+
+"""To loop from 000 to 999 """
+# for i in range(1000):
+#     print('{0:04}'.format(i))
