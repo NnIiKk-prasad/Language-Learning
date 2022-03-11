@@ -30,3 +30,8 @@ which can be modified independently (i.e, any change in check3 will not affect c
 #         count += 10
 
 # print(count)
+
+"""To get date and time when photo was taken from EXIF data using PIL"""
+# from PIL import Image
+# def get_date_taken(path):
+#     return Image.open(path)._getexif()[36867]
