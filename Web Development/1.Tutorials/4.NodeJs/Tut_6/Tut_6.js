@@ -1,1 +1,0 @@
-console.log("The Node Package Manager Tutorial");
