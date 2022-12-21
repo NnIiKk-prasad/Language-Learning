@@ -16,7 +16,7 @@ void display(int *p)
 {
     int i;
     for (i = 0; i <= 4; i++)
-        printf("%d", *(p + i));
+        printf("%d ", *(p + i));
 }
 
 void sort(int *p)
@@ -38,7 +38,7 @@ void main()
     printf("Enter a 5 number:\n");
     input(a);
 
-    printf("\nYou entered: ");
+    printf("\nYou have entered: ");
     display(a);
     printf("\n");
      

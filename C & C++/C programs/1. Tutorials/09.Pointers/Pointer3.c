@@ -26,7 +26,7 @@ void main()
     q = &y;
     *(float*)q = 6.9;
 
-    printf("x = %d y = %d", x, y);
+    printf("x = %d y = %f", x, y);
 }
 
 void fun1()
