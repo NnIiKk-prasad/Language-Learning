@@ -9,7 +9,7 @@ struct date
 void main()
 {
     struct date d1;
-    printf("Enter today's date:\n");
+    printf("Enter a date in DD/MM/YYYY format:\n");
     scanf("%d/%d/%d", &d1.d, &d1.m, &d1.y);
-    printf("Date: %d/%d/%d", d1.d, d1.m, d1.y);
+    printf("\nDate: %d/%d/%d", d1.d, d1.m, d1.y);
 }

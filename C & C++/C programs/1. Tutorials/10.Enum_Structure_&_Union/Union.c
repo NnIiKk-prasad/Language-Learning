@@ -11,6 +11,7 @@ union item
 union a
 {
     int i;
+    // short int i; // To enforce little-endian output.
     char ch[2];
 };
 
