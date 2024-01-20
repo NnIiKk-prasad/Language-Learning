@@ -1,6 +1,6 @@
-show dbs
-use harryKart
-show collections
+// show dbs
+// use harryKart
+// show collections
 
 // Inserting data in mongo db
 db.item.insertOne({name: "Samsung 30s", price: 22000, rating: 4.5, qty: 233, sold: 98})
@@ -27,7 +27,7 @@ db.item.find({rating: {$gt: 3.5}}, {rating: 1, qty: 1})  // to show rating and q
 // Deleting data from mongo db
 db.item.deleteOne({price: 22000})
 
-db.item.deleteMany(({price: 129000})
+db.item.deleteMany({price: 129000})
 
 // Updating data in mongo db
 db.item.updateOne({name: "Moto 30s"}, {$set: {price: 25000}})
