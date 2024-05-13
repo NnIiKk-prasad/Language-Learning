@@ -1,4 +1,12 @@
-.vscode
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### VS Code ###
+.vscode/
+
+### Language specefic ###
 .idea
 .ipynb_checkpoints
 __pycache__
@@ -6,6 +14,10 @@ build
 dist
 *.exe
 *.o
+node_modules
+.env
+
+### Else ###
 rough.c
 Rough.cpp
 Rough.py
@@ -14,5 +26,3 @@ Rough.ipynb
 mnist_784.joblib
 bootstrap-3.4.1
 big.txt
-node_modules
-.env
